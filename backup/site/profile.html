@@ -1,210 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>euexisto - Blogger Profile</title>
-<style>
-* { box-sizing: border-box; }
+    <meta charset="utf-8">
+    <title>euexisto - Blogger Profile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: arial, sans-serif;
-    margin: 0;
-    background: #fff;
-    color: #222;
-}
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            background: #fff;
+            color: #222;
+        }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
-    border-bottom: 1px solid #eee;
-}
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            border-bottom: 1px solid #eee;
+        }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 20px;
-    color: #555;
-}
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            color: #555;
+        }
 
-.brand img {
-    height: 30px;
-}
+        .brand img {
+            height: 30px;
+        }
 
-.topbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: #888;
-    font-size: 20px;
-}
+        .topbar-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: #888;
+            font-size: 20px;
+        }
 
-.avatar-small {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
+        .avatar-small {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-.container {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 0 20px;
-    display: flex;
-    gap: 60px;
-}
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 60px;
+        }
 
-h1.name {
-    color: #d2691e;
-    font-weight: normal;
-    font-size: 28px;
-    margin: 0 0 30px;
-}
+        h1.name {
+            color: #d2691e;
+            font-weight: normal;
+            font-size: 28px;
+            margin: 0 0 30px;
+        }
 
-.profile-photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 10px;
-}
+        .profile-photo {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 10px;
+        }
 
-.side a {
-    display: block;
-    color: #1a73a8;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
+        .side a {
+            display: block;
+            color: #1a73a8;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
 
-.side a:hover {
-    text-decoration: underline;
-}
+        .side a:hover {
+            text-decoration: underline;
+        }
 
-.side p {
-    margin: 4px 0;
-    font-size: 14px;
-}
+        .side p {
+            margin: 4px 0;
+            font-size: 14px;
+        }
 
-.main h2 {
-    font-size: 24px;
-    margin: 0 0 10px;
-}
+        .main h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
 
-.main h2.about {
-    margin-top: 30px;
-}
+        .main h2.about {
+            margin-top: 30px;
+        }
 
-.blogs-list a {
-    display: block;
-    color: #1a73a8;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 6px;
-}
+        .blogs-list a {
+            display: block;
+            color: #1a73a8;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
 
-.blogs-list a:hover {
-    text-decoration: underline;
-}
+        .blogs-list a:hover {
+            text-decoration: underline;
+        }
 
-table.about-table {
-    border-collapse: collapse;
-    margin-top: 10px;
-}
+        table.about-table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
 
-table.about-table td {
-    padding: 4px 10px 4px 0;
-    font-size: 14px;
-    vertical-align: top;
-}
+        table.about-table td {
+            padding: 4px 10px 4px 0;
+            font-size: 14px;
+            vertical-align: top;
+        }
 
-table.about-table td.label {
-    font-weight: bold;
-    text-align: right;
-    white-space: nowrap;
-}
+        table.about-table td.label {
+            font-weight: bold;
+            text-align: right;
+            white-space: nowrap;
+        }
 
-footer {
-    text-align: center;
-    color: #999;
-    font-size: 12px;
-    margin: 80px 0 30px;
-}
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            margin: 80px 0 30px;
+        }
 
-footer a {
-    color: #1a73a8;
-    text-decoration: none;
-}
+        footer a {
+            color: #1a73a8;
+            text-decoration: none;
+        }
 
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="topbar">
-    <div class="brand">
-        <img src="images/logo_blogger_40px.png" alt="Blogger">
-        <span>Blogger</span>
-    </div>
-    <div class="topbar-icons">
-        <span>?</span>
-        <span>⚙</span>
-        <img class="avatar-small" src="images/perfil.jpg" alt="avatar">
-    </div>
-</div>
-
-<div class="container">
-
-    <div class="side">
-        <h1 class="name">euexisto</h1>
-
-        <img class="profile-photo" src="images/perfil.jpg" alt="euexisto">
-
-        <a href="images/perfil.jpg" target="_blank">View Full Size</a>
-
-        <p>On Blogger since:<br>December 2004</p>
-
-        <p>Profile views: 12,593</p>
-
-        <a href="#">Report Abuse</a>
+    <div class="topbar">
+        <div class="brand">
+            <img src="images/logo_blogger_40px.png"
+                 alt="Blogger">
+            <span>Blogger</span>
+        </div>
+        <div class="topbar-icons">
+            <span>?</span>
+            <span>⚙</span>
+            <img class="avatar-small"
+                 src="images/perfil.jpg"
+                 alt="avatar">
+        </div>
     </div>
 
-    <div class="main">
-        <h2>My blogs</h2>
-        <div class="blogs-list">
-            <a href="https://becosuicida.blogspot.com" target="_blank">Beco Suicida</a>
-            <a href="index.html">Eu existo</a>
+    <div class="container">
+
+        <div class="side">
+            <h1 class="name">euexisto</h1>
+
+            <img class="profile-photo"
+                 src="images/perfil.jpg"
+                 alt="euexisto">
+
+            <a href="images/perfil.jpg"
+               target="_blank">View Full Size</a>
+
+            <p>On Blogger since:<br>December 2004</p>
+
+            <p>Profile views: 12,593</p>
+
+            <a href="#">Report Abuse</a>
         </div>
 
-        <h2 class="about">About me</h2>
-        <table class="about-table">
-            <tr>
-                <td class="label">Gender</td>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <td class="label">Industry</td>
-                <td>Communications or Media</td>
-            </tr>
-            <tr>
-                <td class="label">Location</td>
-                <td>Biscoitos, Terceira, Portugal</td>
-            </tr>
-            <tr>
-                <td class="label">Favorite music</td>
-                <td>Creep</td>
-            </tr>
-        </table>
+        <div class="main">
+            <h2>My blogs</h2>
+            <div class="blogs-list">
+                <a href="https://becosuicida.blogspot.com"
+                   target="_blank">Beco Suicida</a>
+                <a href="index.html">Eu existo</a>
+            </div>
+
+            <h2 class="about">About me</h2>
+            <table class="about-table">
+                <tr>
+                    <td class="label">Gender</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td class="label">Industry</td>
+                    <td>Communications or Media</td>
+                </tr>
+                <tr>
+                    <td class="label">Location</td>
+                    <td>Biscoitos, Terceira, Portugal</td>
+                </tr>
+                <tr>
+                    <td class="label">Favorite music</td>
+                    <td>Creep</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 
-</div>
-
-<footer>
-    ©2026 Blogger - <a href="#" target="_blank">Privacy Policy</a>
-</footer>
+    <footer>
+        ©2026 Blogger - <a href="#"
+           target="_blank">Privacy Policy</a>
+    </footer>
 
 </body>
+
 </html>
